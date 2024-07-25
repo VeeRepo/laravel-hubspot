@@ -1,48 +1,48 @@
 {
-    "name": "rossjcooper/laravel-hubspot",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ross Cooper",
-            "email": "therossjcooper@gmail.com"
-        }
-    ],
-    "require": {
-        "illuminate/support": ">=5.3",
-        "hubspot/api-client": "^10.0",
-        "php": ">=8.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Rossjcooper\\LaravelHubSpot\\": "src/",
-            "Tests\\": "tests/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Rossjcooper\\LaravelHubSpot\\HubSpotServiceProvider"
-            ],
-            "aliases": {
-                "HubSpot": "Rossjcooper\\LaravelHubSpot\\Facades\\HubSpot"
-            }
-        }
-    },
-    "description": "Adds a Laravel specific wrapper for the Hubspot client package",
-    "keywords": [
-        "laravel",
-        "hubspot",
-        "api",
-        "service"
-    ],
-    "require-dev": {
-        "orchestra/testbench": ">=3.4",
-        "friendsofphp/php-cs-fixer": "^v3.19"
-    },
-    "scripts": {
-        "test": "./vendor/bin/phpunit",
-        "lint": "./vendor/bin/php-cs-fixer fix -v --dry-run",
-        "fix": "./vendor/bin/php-cs-fixer fix"
+  "name": "rossjcooper/laravel-hubspot",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ross Cooper",
+      "email": "therossjcooper@gmail.com"
     }
+  ],
+  "require": {
+    "illuminate/support": ">=5.3",
+    "hubspot/api-client": "^11.1",
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rossjcooper\\LaravelHubSpot\\": "src/",
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rossjcooper\\LaravelHubSpot\\HubSpotServiceProvider"
+      ],
+      "aliases": {
+        "HubSpot": "Rossjcooper\\LaravelHubSpot\\Facades\\HubSpot"
+      }
+    }
+  },
+  "description": "Adds a Laravel specific wrapper for the Hubspot client package",
+  "keywords": [
+    "laravel",
+    "hubspot",
+    "api",
+    "service"
+  ],
+  "require-dev": {
+    "orchestra/testbench": ">=3.4",
+    "friendsofphp/php-cs-fixer": "^v3.19"
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit",
+    "lint": "./vendor/bin/php-cs-fixer fix -v --dry-run",
+    "fix": "./vendor/bin/php-cs-fixer fix"
+  }
 }
